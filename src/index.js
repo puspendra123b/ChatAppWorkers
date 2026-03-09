@@ -1,6 +1,7 @@
 import { connectRedis, getRedis } from "./config/redis.js";
 import { sendOtpEmail } from "./services/emailService.js";
 
+
 const emailWorker = async () => {
   try {
     await connectRedis();
